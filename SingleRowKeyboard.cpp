@@ -52,7 +52,6 @@ int calculateTime(string keyboard, string word)
 	int totalTime = 0;
 	for (int i = 0; i < word.length(); i++)
 	{
-		// using the .find() method from the string libary
 		// gets the index location of the current char and subtracts that from the previous index to the the total time
 		// to subtract the two indecies, using the helper function subtractPostive
 		totalTime += subtractPostive(keyboard.find(word.at(i)), previousIndex);
